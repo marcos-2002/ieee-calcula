@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do IEEE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Exercício de calculadora</h1>
+
+    <div class="calculadora">
+        <h2>IEEE Calcula</h2>
+        <p class="resultado">0</p>
+        <table>
+            <tr>
+                <td><button class="botao" onclick="limpar()">C</button></td>
+                <td><button class="botao" onclick="limpar_final()"><</button></td>
+                <td><button class="botao" onclick="incluir(event)">/</button></td>
+                <td><button class="botao" onclick="incluir(event)">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="incluir(event)">7</button></td>
+                <td><button class="botao" onclick="incluir(event)">8</button></td>
+                <td><button class="botao" onclick="incluir(event)">9</button></td>
+                <td><button class="botao" onclick="incluir(event)">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="incluir(event)">4</button></td>
+                <td><button class="botao" onclick="incluir(event)">5</button></td>
+                <td><button class="botao" onclick="incluir(event)">6</button></td>
+                <td><button class="botao" onclick="incluir(event)" id="incluir(event)">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="incluir(event)">1</button></td>
+                <td><button class="botao" onclick="incluir(event)">2</button></td>
+                <td><button class="botao" onclick="incluir(event)">3</button></td>
+                <td rowspan="2"><button class="botao" onclick="igual()" id="igual">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="botao" onclick="incluir(event)" id="zero">0</button></td>
+                <td><button class="botao" onclick="incluir(event)">.</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
